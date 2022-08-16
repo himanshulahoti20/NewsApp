@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DisplayCell" rowHeight="120" id="KGk-i7-Jjw" customClass="DisplayCell" customModule="News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsO-wi-IdG">
+                        <rect key="frame" x="5" y="5" width="385" height="110"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zz1-0I-dEt">
+                                <rect key="frame" x="230" y="5" width="150" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="isj-j6-MSK"/>
+                                    <constraint firstAttribute="width" constant="150" id="xGC-9Q-lIu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Washington Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tig-42-xl8">
+                                <rect key="frame" x="5" y="10" width="220" height="19"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="17"/>
+                                <color key="textColor" red="0.094069356179999994" green="0.61854126060000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Amazon's share of the US e-commerce market is now 49%, or 5% of all retail spend" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="weY-dC-eSi">
+                                <rect key="frame" x="5" y="39" width="220" height="66"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tig-42-xl8" firstAttribute="leading" secondItem="bsO-wi-IdG" secondAttribute="leading" constant="5" id="06s-3n-v6a"/>
+                            <constraint firstAttribute="trailing" secondItem="Zz1-0I-dEt" secondAttribute="trailing" constant="5" id="3Tj-YI-tgf"/>
+                            <constraint firstItem="Zz1-0I-dEt" firstAttribute="leading" secondItem="tig-42-xl8" secondAttribute="trailing" constant="5" id="5gz-zj-3Xh"/>
+                            <constraint firstItem="tig-42-xl8" firstAttribute="top" secondItem="bsO-wi-IdG" secondAttribute="top" constant="10" id="8vU-Y6-2ka"/>
+                            <constraint firstItem="weY-dC-eSi" firstAttribute="top" secondItem="tig-42-xl8" secondAttribute="bottom" constant="10" id="ELS-wK-7sY"/>
+                            <constraint firstItem="Zz1-0I-dEt" firstAttribute="centerY" secondItem="bsO-wi-IdG" secondAttribute="centerY" id="Fe7-MD-ImG"/>
+                            <constraint firstItem="weY-dC-eSi" firstAttribute="leading" secondItem="bsO-wi-IdG" secondAttribute="leading" constant="5" id="T1b-66-LsV"/>
+                            <constraint firstAttribute="bottom" secondItem="weY-dC-eSi" secondAttribute="bottom" constant="5" id="T3d-yM-oDG"/>
+                            <constraint firstItem="Zz1-0I-dEt" firstAttribute="leading" secondItem="weY-dC-eSi" secondAttribute="trailing" constant="5" id="WBp-yP-t07"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="bsO-wi-IdG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="RWU-wW-NzT"/>
+                    <constraint firstAttribute="trailing" secondItem="bsO-wi-IdG" secondAttribute="trailing" constant="5" id="Ymo-Cj-otT"/>
+                    <constraint firstItem="bsO-wi-IdG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="hD9-cF-UtV"/>
+                    <constraint firstAttribute="bottom" secondItem="bsO-wi-IdG" secondAttribute="bottom" constant="5" id="zFc-9T-A8n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgNewsImage" destination="Zz1-0I-dEt" id="LG4-li-4Bp"/>
+                <outlet property="lblNewsSource" destination="tig-42-xl8" id="UuG-s7-flM"/>
+                <outlet property="lblNewsTitle" destination="weY-dC-eSi" id="hOR-u4-NDq"/>
+                <outlet property="tableView" destination="bsO-wi-IdG" id="VVW-yP-gvM"/>
+            </connections>
+            <point key="canvasLocation" x="200.72463768115944" y="125.22321428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
